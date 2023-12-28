@@ -21,6 +21,10 @@ function Table() {
   
         var nickText = document.createElement("span");
   
+        
+        nickText.textContent = item.data;
+          
+          
         listItem.appendChild(nickText);
   
         var recordText = document.createElement("span");

@@ -19,9 +19,25 @@ function Inp_cal() {
       setValue(dsa);
     };
     function dwa() {
+
+
+const currentDate = new Date();
+const hours = currentDate.getHours();
+const minutes = currentDate.getMinutes();
+const fh = hours < 10 ? `0${hours}` : hours;
+const fm = minutes < 10 ? `0${minutes}` : minutes;
+const fy = `${fh}:${fm}`;
+
+
         let o = JSON.parse(localStorage.kcal_list);
-        o.push({ kcal: Number(value) });
-        localStorage.kcal_list = JSON.stringify(o);
+        o.push(
+          { 
+            kcal: value+' kcal',
+            data:fy
+          });
+        
+        
+          localStorage.kcal_list = JSON.stringify(o);
     
         setValue('');
         document.getElementById("sunmit").style.display = 'none';
