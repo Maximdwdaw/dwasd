@@ -1,0 +1,141 @@
+@import url('./fonts.css');
+
+
+
+
+
+.contaniner {
+position: fixed;
+height: 8%;
+width: 100%;
+background-color: rgb(14, 32, 32);
+left: 0px;
+top: 0px;
+text-align: center;
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+* {
+    font-family: 'Bebas Neue';
+}
+#tiitle {
+    
+    color: rgb(204, 204, 204);
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+}
+
+
+#tiitles {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10%;
+    white-space: nowrap
+}
+
+#inp_kcall::placeholder {
+font-size: 20px;
+}
+
+
+#prew {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 5%;
+    width: 101%;
+    height: 5%;
+    font-size: 30px;
+    background-color: rgb(14, 32, 32);    
+    color: rgb(204, 204, 204);
+
+
+}
+
+
+#cleer {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0%;
+    width: 101%;
+    height: 5%;
+    font-size: 30px;
+    background-color: rgb(14, 32, 32);    
+    color: rgb(204, 204, 204);
+
+
+}
+#sunmit {
+
+position: fixed;
+color: black;
+border: 5;
+border-style: solid;
+border-color: rgb(8, 17, 17);
+border-radius: 15px;
+width: 65%;
+height: 5%;
+top: 45%;
+left: 50%;
+transform: translate(-50%);
+display: none;
+font-size: 30px;
+}
+
+#inp_kcal {
+position: fixed;
+left: 50%;
+transform: translate(-50%);
+top: 35%;
+font-size: 20px;
+text-align: center;
+width: 65%;
+height: 5%;
+border-radius: 20px;
+color: black;
+border: 5px;
+border-style: solid;
+border-color: rgb(8, 17, 17);
+
+}
+
+#leaderboard {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 15%;
+    margin: 20px auto;
+    width: 200px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  li:nth-child(even) {
+    background-color: #e6e6e6;
+  }
+
+  li span {
+    font-weight: bold;
+  }
